@@ -30,7 +30,7 @@ La SNR previa al procesamiento sería `−35,4 dB` con el reflector idealizado. 
 
 **Advertencia técnica:** la banda de ruido de 10 MHz usada aquí es una referencia ilustrativa. En FMCW real, el ancho de banda de modulación no debe confundirse automáticamente con el ancho de banda de ruido de la IF ni con el tiempo de observación del filtro adaptado. El rendimiento debe recalcularse con el plan exacto de chirps, filtrado y muestreo.
 
-## Riesgos pendientes
+## Riesgos pendientes de evaluar
 
 - RCS del vehículo desconocida y variable; evaluar al menos 1, 10 y 100 m².
 - Acoplamiento TX/RX, rango dinámico y ruido de fase no cuantificados.
