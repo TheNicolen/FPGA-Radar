@@ -20,8 +20,7 @@ Diseñar, implementar y caracterizar experimentalmente un prototipo de radar coh
 ## Restricciones iniciales
 
 - Hardware disponible declarado: reflector DirecTV ~46 cm de alto y ancho. Se consideran Nexys Video y Jetson Nano como plataformas objetivo; **disponibilidad física pendiente de confirmar**.
-- Presupuesto inicial de RF y accesorios: **< $300.000 CLP**; no garantiza radar final de 1 km.
-- Banda de interés para estudio: 2,45 GHz (alternativa 5,8 GHz), sin autorización de emisión asumida.
+- Banda de interés para estudio: 2,45 GH/ 5,8 GHz, sin autorización de emisión asumida.
 - Caso de uso: vehículos; RCS variable con orientación, geometría y frecuencia.
 
 ## Fuera de alcance de la primera etapa
