@@ -1,0 +1,122 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "e400c20b08cf5873a347dc0fc693c37d3bacee27366f97cb9f747b5b7cc2b58b"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256": "9025d7827162297b5bec1f623aba7df55d05fe77d0c6b49b9bb916cc5e1d20b0"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "6b678e2700c03908cbb9c4f09997eee138f8fb069a47c5515a8a907cc1e714bc"
+  },
+  {
+    "path": "ROADMAP.md",
+    "sha256": "f16cbbcc0ff5d986ebf0ec377f54bfc332b37676bb8d917456cfc591a2b23443"
+  },
+  {
+    "path": "docs/README.md",
+    "sha256": "76e0aead56775acc423cd0e038f28fb12331a26c465a58d7a5e62cd60f72ef18"
+  },
+  {
+    "path": "experiments/README.md",
+    "sha256": "2444bfaaf7760e34c2f3988024283576a907ca2fef7c024764a079ed3a041c36"
+  },
+  {
+    "path": "papers/README.md",
+    "sha256": "b4aca4d98031d7776f09a86775d1f362884977007c3b8ddecb7313c435628ad8"
+  },
+  {
+    "path": "simulation/README.md",
+    "sha256": "05a7927d4d0b281c7803365edf8e566a4b559fc046bf6fc822ad0c5acbbda244"
+  },
+  {
+    "path": "hardware/README.md",
+    "sha256": "ddac3eff848e7c95cd045288f4264f80fd30834f371a0f79e8acbb9dc425743c"
+  },
+  {
+    "path": "jetson/README.md",
+    "sha256": "5fe582711ccb77b1e5ef65b180184a882bdb122591e85ae3854bac487d735f53"
+  },
+  {
+    "path": "references/README.md",
+    "sha256": "9a5cf253f8cc016bbf855faf42f7d9518a3bb9d96568918ddc9b107dbdc577a8"
+  },
+  {
+    "path": "progress/README.md",
+    "sha256": "c478d0ad1d604807f5ff78350fd3f21217c81260fc6265c055efac9d16ecb131"
+  },
+  {
+    "path": "progress/TEMPLATE.md",
+    "sha256": "be11616bc33771b241c84ba11342c4e5c723a329cc72d7c8c2e5ba877019f965"
+  },
+  {
+    "path": "progress/2026-11-14-inicio-documentacion.md",
+    "sha256": "959ec7ab594dd7b8c7099cca3be0d5b19834e0c6dd07b832eacf3e03784852f0"
+  },
+  {
+    "path": "fpga/README.md",
+    "sha256": "a04d64e6ad910f6451e24dc62cc3a0a8c0e9bc0db48eef168efe055f43ea8784"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/experimento.md",
+    "sha256": "1f0cf7bf31c3ea0197640216b8889bb64a0cc7e19d878ba6f037e8c8c8b6dd52"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/propuesta-tecnica.md",
+    "sha256": "e4bdc3fc077740890979d14eb1cf73d8b7e143363b9128edb1abf90fcafd37ac"
+  },
+  {
+    "path": "docs/03-requisitos/requisitos.md",
+    "sha256": "0db49e3de5bfde6e39aefdcfc5b56214cea8df0d68307d22cccdb122e6625798"
+  },
+  {
+    "path": "docs/decisiones/ADR-0001-plataforma-digital.md",
+    "sha256": "2bac09264268e68f247e4226b073cf5faf6f251aad281644c895bc5155f366cb"
+  },
+  {
+    "path": "docs/decisiones/README.md",
+    "sha256": "f118c3bb33296f9742485b427295922103707e755edf3275b6f2873248f80811"
+  },
+  {
+    "path": "docs/decisiones/ADR-0002-seleccion-rf.md",
+    "sha256": "8d425808037f4df1c01fc768edbff8ad634370d92c5f9a6638699d04004c5485"
+  },
+  {
+    "path": "docs/05-antenas/alimentador-cantenna.md",
+    "sha256": "19cbff2e9e1a1f870fb77e172bd86cd9ca02958a4cc12209ab331479724d5995"
+  },
+  {
+    "path": "docs/05-antenas/reflector-directv.md",
+    "sha256": "8dac7d57e715322a1be87dc8fbb15c9776a275fafaf19337c733c05c94b86043"
+  },
+  {
+    "path": "docs/01-introduccion/objetivos-y-alcance.md",
+    "sha256": "d614ebf1ca1a9b8f7895380fc68af8c34b82e5f9602fe78b3bb2eae827622c88"
+  },
+  {
+    "path": "docs/07-implementacion/verificacion.md",
+    "sha256": "d010350d6022d4ce6d7612b76482a81f0f641962daa2ed55e99f3d7837e39466"
+  },
+  {
+    "path": "docs/04-arquitectura/arquitectura-general.md",
+    "sha256": "38f436a5628cb1b72be2f42ccdaa71e2e2a15882b212615710012a63611b5618"
+  },
+  {
+    "path": "docs/02-fundamentos/presupuesto-enlace.md",
+    "sha256": "6e79061ff33136ea362316e9a2375d84a9fce5c405c28a12195989ee19cce548"
+  },
+  {
+    "path": "docs/02-fundamentos/principios-radar.md",
+    "sha256": "86192cee19836a0535e4fa65f2f920df4451d6102ae4bc5e8c1255a7e87db0a6"
+  },
+  {
+    "path": "docs/06-procesamiento/pipeline.md",
+    "sha256": "5f3ca36a5b8729105c1c3cdcbc842cb152ab7572907884eb55a4dfa7d375e8de"
+  },
+  {
+    "path": "docs/08-experimentos/protocolo.md",
+    "sha256": "99a0603d2e3c66488905e5d35bef667aadb8a02eb35ada843ff00a27eb60fb50"
+  }
+]

@@ -1,0 +1,51 @@
+# Vivado: salidas regenerables y temporales
+.Xil/
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.jou
+*.log
+*.str
+*.wdb
+*.vcd
+*.fst
+# No ignorar archivos fuente .xpr/.xdc/.sv por defecto
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+# Editors / OS
+.vscode/*.log
+.idea/
+.DS_Store
+Thumbs.db
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Temporary / large generated data
+*.tmp
+*.bak
+
+# Salidas regenerables del proyecto
+build/
+artifacts/
+simulation/results/
+papers/ieee/build/
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+# Datos RF grandes: versionar manifiestos y resúmenes, no capturas masivas
+experiments/**/raw/*.bin
+experiments/**/raw/*.h5
+experiments/**/raw/*.npy

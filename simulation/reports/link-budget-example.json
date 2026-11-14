@@ -1,0 +1,26 @@
+{
+  "evidence": "TEORICO",
+  "model": "monostatic_equivalent_free_space",
+  "wavelength_m": 0.12236426857142857,
+  "received_power_dbm": -133.373203549395,
+  "noise_power_dbm": -97.97518719422811,
+  "snr_before_processing_db": -35.398016355166874,
+  "ideal_processing_gain_required_db": 45.398016355166874,
+  "limitations": "No clutter, leakage, phase noise or detection statistics; noise bandwidth is not automatically FMCW sweep bandwidth.",
+  "config_sha256": "7d154023ada517525359500e9023c677f67d3d99306e0f309ceb16705a8fdba0",
+  "config": {
+    "evidence": "HIPOTESIS",
+    "description": "Escenario ilustrativo heredado; no configuración RF aprobada",
+    "frequency_hz": 2450000000.0,
+    "range_m": 1000,
+    "tx_power_dbm": 0,
+    "tx_gain_dbi": 15,
+    "rx_gain_dbi": 18.85,
+    "rcs_m2": 10,
+    "loss_db": 6,
+    "noise_figure_db": 6,
+    "noise_bandwidth_hz": 10000000.0,
+    "temperature_k": 290,
+    "target_snr_db": 10
+  }
+}
