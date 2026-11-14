@@ -2,9 +2,7 @@
 
 > **Estado:** Investigación y diseño preliminar · **Versión documental:** v0.2.0 · **Última revisión:** 2026-11-14
 
-Proyecto de investigación y desarrollo de un radar coherente con procesamiento digital en FPGA (**Digilent Nexys Video, Artix-7 XC7A200T**) y unidad de supervisión **NVIDIA Jetson Nano**. La meta aspiracional es detectar vehículos a una distancia de hasta **1 km**, con un presupuesto inicial para RF, antenas y accesorios inferior a **$300.000 CLP** (sin considerar FPGA ni Jetson).
-
-> **Importante:** El alcance de 1 km no ha sido demostrado. Todas las cifras de ganancia, sensibilidad y presupuesto de enlace son estimaciones sujetas a verificación. No se ha seleccionado ni validado un transceptor RF definitivo.
+Proyecto de investigación y desarrollo de un radar coherente con procesamiento digital en FPGA (**Digilent Nexys Video, Artix-7 XC7A200T**) y unidad de supervisión **NVIDIA Jetson Nano**. La meta es detectar vehículos a una distancia de hasta **1 km**, utilizando sensores de radiofrecuencia amplificados por antenas de topologías apropiadas, identificación de patrones en tiempo real, mitigación de ruido por fourier para identificación más precisa.
 
 ## Empieza aquí
 
@@ -29,7 +27,7 @@ flowchart LR
   E --> F[Visualización y seguimiento]
 ```
 
-La RF genera/recibe la señal de microondas; la FPGA procesa las muestras digitalizadas. La Jetson gestiona y visualiza las detecciones. **El enlace FPGA-transceptor está por definir**.
+La RF genera/recibe la señal de microondas; la FPGA procesa las muestras digitalizadas. La Jetson gestiona y visualiza las detecciones.
 
 ## Fases
 
