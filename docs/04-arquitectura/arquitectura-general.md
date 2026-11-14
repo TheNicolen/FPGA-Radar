@@ -9,14 +9,14 @@ flowchart TD
   J --> UI[Seguimiento, interfaz y registros]
 ```
 
-## Responsabilidades
+## Descripción de bloques
 
 **RF**: síntesis, mezcla, filtros analógicos, ganancias, sincronización y digitalización. **FPGA**: temporización determinista, buffering, filtros, FFT, Doppler y CFAR. **Jetson**: configuración, registro, visualización y seguimiento.
 
 ## Interfaces pendientes de diseñar
 
 - **Transceptor ↔ FPGA:** verificar niveles de tensión, LVDS/CMOS, DDR, pines FMC LPC, reloj, SPI y caudal real.
-- **FPGA ↔ Jetson:** protocolo Ethernet (propuesta UDP con numeración de paquetes, CRC y marcas de tiempo).
+- **FPGA ↔ Jetson:** protocolo Ethernet para comunicación a altas velocidades.
 - **Tiempo:** dominios de reloj, PLL, resets y medición de deriva.
 
 ## Candidatos de RF
