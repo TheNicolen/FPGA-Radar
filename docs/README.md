@@ -35,3 +35,5 @@ Enlaces entre documentación, archivos RTL, scripts y ensayos deben ser relativo
 La política de evidencia amplía las etiquetas del paquete original separando explícitamente teoría e hipótesis. Los enlaces se resuelven respecto al archivo que los contiene.
 
 - [Procedencia y preservación del paquete](00-metodologia/procedencia.md)
+
+- [Frecuencias y modelo MATLAB](06-procesamiento/frecuencias-y-modelo-matlab.md)

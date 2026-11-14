@@ -10,3 +10,5 @@ Cada decisión relevante debe quedar registrada con número, fecha, estado, cont
 - [Plantilla de ADR](TEMPLATE.md)
 
 [Volver al índice técnico](../README.md)
+
+- [ADR-0005: Referencia MATLAB desde IF](ADR-0005-referencia-matlab-if.md)

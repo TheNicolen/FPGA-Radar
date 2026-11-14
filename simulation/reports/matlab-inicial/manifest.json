@@ -1,0 +1,33 @@
+{
+  "matlab_version": "24.2.0.3212159 (R2024b) Update 9",
+  "seed": 20261114,
+  "base_commit": "17b231f9c048c28ee0f3f9c377214d096bb24df8",
+  "sources": {
+    "antenna_link.m": "fce4322e254e1c940b6c3d4ee45a7fa93ab8cd405c6c86b68ab67516a6162b94",
+    "ca_cfar_1d.m": "f2557d36006ec6ffdf5c74effb396ae1841d40a230bbbc27a8a3e1a0473dc86f",
+    "fmcw_parameters.m": "2d63c1558750961a16b5d7f2e3da2da3c11b043a8c1c7440a74f4a5c59277c7e",
+    "quantize_iq.m": "e835d71347b128f072ab0b95688ea98ac05d4d874a9cd08cd0c03a41b388dc14",
+    "radar_config.m": "b9a67e6df924543ed4f7685c4a1859a6aa701e84f27b02d122e018ed18fe03dc",
+    "range_doppler.m": "35a36c4337cfa4ec878f8107a7949d1bfc2753549f785024a31ff1b4f746ecfa",
+    "run_study.m": "17bd5a0b375fb709b2884d7bbf734a84de175920202edba77728bf3e41409eb7",
+    "synth_iq.m": "4390530b470543f48f4d8edb898df89eab5e00f8f1b786878c1ed9ee66d0307f",
+    "test_radar.m": "048d69abd2dd8c42a69af987732a883f3a286f060180a698c7c8442f9f9721eb"
+  },
+  "raw_matlab_outputs": {
+    "iq_first_chirp_q15.csv": "a726a7f31f96f427809ada9702c21c74eba68bd9191967fc72a6be13de1619af",
+    "sensitivity.csv": "fc4176d96f01d34d053a2cbaa35452565c60b2cf788f6b062f31045ac989ed14",
+    "study.mat": "47a00d0bd8fe128c05643a6d50bb781f9abe7d41d5fee3bf9c9d27de8a64de5d",
+    "summary.json": "1374842913c8861d4214b8e87041387752e903d29b73fec5b07afd17dd5726ca",
+    "synthetic_range_doppler.png": "4fe3260fdf7cb4962da86c9ad6d9a0dc45b398052d671d2b0f39e3ffe0fbb4cc",
+    "theoretical_range.png": "e34a12e47e4d512c011de7aa417e81ec0178a8864b8e0c3a559492ffac9bea4e"
+  },
+  "archived_outputs": {
+    "iq_first_chirp_q15.csv": "f936a1272a2af404c39ce5892f4bde391a689d6e477a4b4a7cc3eee7c3f7f56a",
+    "python-reference.json": "96b922966dfe6a5b2cbf67b3af10ef6cbe1266cc1fd7baea73940870e01f87fd",
+    "sensitivity.csv": "e5bdd75498674e1bf801e0ed4b51d9d955462edb31e3f7e2707bc927e4539eb0",
+    "summary.json": "1374842913c8861d4214b8e87041387752e903d29b73fec5b07afd17dd5726ca",
+    "synthetic_range_doppler.png": "4fe3260fdf7cb4962da86c9ad6d9a0dc45b398052d671d2b0f39e3ffe0fbb4cc",
+    "theoretical_range.png": "e34a12e47e4d512c011de7aa417e81ec0178a8864b8e0c3a559492ffac9bea4e"
+  },
+  "note": "raw_matlab_outputs hashes original outputs; archived_outputs hashes versioned UTF-8/LF copies. study.mat is local and regenerable, not uploaded."
+}

@@ -29,3 +29,7 @@ CFAR inicial por decidir: CA-CFAR sobre potencia lineal. Fijar celdas de entrena
 ## Reproducibilidad
 
 Guardar configuración, seed, versiones, commit, verdad sintética y checksum de vectores. Separar salida flotante, cuantizada y RTL; tablas y gráficos deben llevar [SIMULADO]. Resultados grandes en almacenamiento privado con manifiesto; resúmenes pequeños revisados en reports/.
+
+## Avance 2026-11-14
+
+La [primera referencia MATLAB](reports/2026-11-14-matlab-estudio-inicial.md) ya fue ejecutada. Cubre casos básicos de rango/Doppler, blancos separados, cuantización de entrada y CFAR IID aislado. SIM-004/005 completos, punto fijo interno y degradaciones RF siguen pendientes. El encabezado inicial describe el plan previo a esta ejecución.

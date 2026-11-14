@@ -1,0 +1,101 @@
+{
+  "engine": "Python stdlib independent reference, NOT MATLAB execution",
+  "python": "3.14.7",
+  "configuration": {
+    "c": 299792458.0,
+    "fc_hz": 2450000000.0,
+    "aperture_width_m": 0.46,
+    "aperture_height_m": 0.46,
+    "aperture_efficiency": 0.55,
+    "tx_gain_dbi": 15.0,
+    "tx_power_dbm": 0.0,
+    "rcs_m2": 10.0,
+    "loss_db": 6.0,
+    "noise_figure_db": 6.0,
+    "temperature_k": 290.0,
+    "threshold_snr_db": 10.0,
+    "bandwidth_hz": 20000000.0,
+    "chirp_duration_s": 0.000256,
+    "chirp_interval_s": 0.0003,
+    "sample_rate_hz": 2000000.0,
+    "sample_start_s": 8e-06,
+    "samples": 480.0,
+    "chirps": 128.0,
+    "range_fft_size": 512.0,
+    "max_range_m": 1000.0,
+    "max_speed_mps": 40.0,
+    "fpga_clock_hz": 100000000.0,
+    "adc_bits": 16.0,
+    "seed": 20261114.0
+  },
+  "derived": {
+    "wavelength_m": 0.12236426857142857,
+    "slope_hz_s": 78125000000.0,
+    "max_beat_hz": 521847.684373701,
+    "nominal_resolution_m": 7.49481145,
+    "observed_resolution_m": 7.9944655466666665,
+    "range_bin_m": 7.49481145,
+    "velocity_bin_mps": 1.5932847470238096,
+    "unambiguous_speed_mps": 101.97022380952382,
+    "frame_s": 0.0384,
+    "raw_frame_bytes": 245760.0,
+    "fft_cube_bytes_32bit_components": 524288.0,
+    "cycles_per_sample": 50.0,
+    "geometric_gate_limit_m": 1199.169832
+  },
+  "link_1km": {
+    "rx_gain_dbi": 18.848688611188695,
+    "received_dbm": -133.3745149382063,
+    "noise_dbm": -104.9648872375883,
+    "coherent_gain_db": 44.36268688912093,
+    "ideal_bin_snr_db": 15.953059188502936,
+    "energy_threshold_range_m": 1408.7258362806817
+  },
+  "passed_checks": [
+    "FFT versus direct DFT",
+    "link R^-4 and fixed-TX/RX-aperture frequency invariance",
+    "timing and alias parameter guards",
+    "static and signed Doppler recovery",
+    "two separated synthetic targets",
+    "quantization and saturation",
+    "Q1.15 input peak matches floating reference",
+    "CA-CFAR IID exponential false-alarm probability"
+  ],
+  "synthetic_peaks": [
+    {
+      "range_corrected_m": 599.584916,
+      "velocity_mps": 0.0,
+      "range_bin": 80,
+      "doppler_bin": 64
+    },
+    {
+      "range_corrected_m": 599.0852619033333,
+      "velocity_mps": 15.932847470238096,
+      "range_bin": 80,
+      "doppler_bin": 74
+    },
+    {
+      "range_corrected_m": 600.0845700966667,
+      "velocity_mps": -15.932847470238096,
+      "range_bin": 80,
+      "doppler_bin": 54
+    }
+  ],
+  "cfar_iid": {
+    "trials": 50000,
+    "pfa_target": 0.01,
+    "pfa_observed": 0.01012
+  },
+  "source_sha256": {
+    "antenna_link.m": "fce4322e254e1c940b6c3d4ee45a7fa93ab8cd405c6c86b68ab67516a6162b94",
+    "ca_cfar_1d.m": "f2557d36006ec6ffdf5c74effb396ae1841d40a230bbbc27a8a3e1a0473dc86f",
+    "fmcw_parameters.m": "2d63c1558750961a16b5d7f2e3da2da3c11b043a8c1c7440a74f4a5c59277c7e",
+    "quantize_iq.m": "e835d71347b128f072ab0b95688ea98ac05d4d874a9cd08cd0c03a41b388dc14",
+    "radar_config.m": "b9a67e6df924543ed4f7685c4a1859a6aa701e84f27b02d122e018ed18fe03dc",
+    "range_doppler.m": "35a36c4337cfa4ec878f8107a7949d1bfc2753549f785024a31ff1b4f746ecfa",
+    "run_study.m": "17bd5a0b375fb709b2884d7bbf734a84de175920202edba77728bf3e41409eb7",
+    "synth_iq.m": "4390530b470543f48f4d8edb898df89eab5e00f8f1b786878c1ed9ee66d0307f",
+    "test_radar.m": "048d69abd2dd8c42a69af987732a883f3a286f060180a698c7c8442f9f9721eb"
+  },
+  "limitations": "Ideal theory and synthetic data; no physical or FPGA validation. This independent engine does not execute MATLAB source."
+}

@@ -6,3 +6,7 @@
 *.tcl text eol=lf
 *.tex text eol=lf
 *.json text eol=lf
+
+*.m text eol=lf
+*.csv text eol=lf
+*.png binary

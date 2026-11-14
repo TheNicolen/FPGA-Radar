@@ -17,3 +17,5 @@ Este directorio documenta **qué se hizo, cómo se verificó y qué falta**. Cad
 - [2026-11-14 — Organización y base digital](2026-11-14-organizacion-y-base-digital.md)
 
 [Inicio](../README.md)
+
+- [2026-11-14 — Laboratorio MATLAB inicial](2026-11-14-simulacion-matlab.md)

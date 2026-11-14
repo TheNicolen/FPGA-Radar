@@ -69,3 +69,7 @@ El contenido se mantiene en Markdown versionado. Los datos de experimentos sigue
 | [references](references/README.md) | Fuentes técnicas primarias |
 
 **Privacidad:** mantener GitHub privado. La copia local y su ZIP no constituyen confirmación de publicación ni sincronización remota.
+
+## Estudio MATLAB inicial
+
+[Ejecutar el laboratorio](simulation/matlab/README.md) · [RF, muestreo y reloj FPGA](docs/06-procesamiento/frecuencias-y-modelo-matlab.md). La ganancia y el alcance siguen siendo teóricos; los blancos del modelo DSP son sintéticos.
