@@ -1,15 +1,23 @@
-# Modelos y simulaciones
+# Índice de simulación
 
-[Inicio](../README.md) · [Plan FMCW](PLAN.md) · [Inicio rápido](../docs/07-implementacion/inicio-rapido.md)
+[Inicio](../README.md) · [Índice técnico](../docs/README.md) · [Hoja de ruta](../ROADMAP.md)
 
-- [models/link_budget.py](models/link_budget.py): cálculo analítico paramétrico de enlace, no simulador de detección.
-- [configs/link_budget.example.json](configs/link_budget.example.json): hipótesis ilustrativas, no configuración RF aprobada.
-- [tests/test_link_budget.py](tests/test_link_budget.py): comprobación de escalas y casos de referencia.
-- [vectors](vectors/README.md): contrato de vectores compartidos con RTL.
-- [reports](reports/README.md): resúmenes reproducibles de ejecuciones.
+## Ruta de lectura
 
-No hay simulación FMCW completa ejecutada. El cálculo usa solo la biblioteca estándar de Python; registrar `python --version`. Las futuras dependencias numéricas deberán fijarse cuando se implemente y verifique el modelo.
+| Estudio | Pregunta | Leer | Ejecutar / datos | Estado de evidencia |
+|---|---|---|---|---|
+| S0 | ¿Qué potencia de eco predice el modelo? | [Presupuesto de enlace](reports/2026-11-14-calculo-enlace.md) | [Python](models/link_budget.py), [configuración](configs/link_budget.example.json) | TEÓRICO, cálculo ejecutado |
+| S1 | ¿Cómo influyen antena, chirps y muestreo? | [Informe con figuras](reports/2026-11-14-matlab-estudio-inicial.md) | [MATLAB](matlab/README.md), [datos](reports/matlab-inicial/summary.json) | TEÓRICO y SIMULADO; MATLAB ejecutado |
+| S2 | ¿Cómo representar la FFT con bits finitos? | [Subíndice FFT fija](fixed-point/README.md), [capítulo ilustrado](../docs/06-procesamiento/fft-punto-fijo.md) | [Microejemplo MATLAB](matlab/demo_fixed_butterfly.m), [comprobación exacta](fixed-point/check_butterfly.py) | Diseño PROPUESTO y ejemplo TEÓRICO; FFT fija completa pendiente |
 
-## Primer laboratorio MATLAB
+S1 cuantiza la entrada, pero sus FFT internas todavía son de punto flotante. S2 documenta cómo avanzar a aritmética interna fija; no declara que ya exista una FFT fija completa validada.
 
-[Antena, alcance teórico y referencia DSP](matlab/README.md). Incluye fuentes .m y comprobación independiente; consultar el [informe de ejecución](reports/2026-11-14-matlab-estudio-inicial.md) antes de interpretar su estado.
+## Planes y recursos comunes
+
+- [Plan FMCW](PLAN.md): casos de señal, ruido, clutter y detección.
+- [Plan de verificación FFT fija](fixed-point/PLAN.md): criterios antes de RTL.
+- [Vectores compartidos con RTL](vectors/README.md).
+- [Informes y resultados](reports/README.md).
+- [Inicio rápido](../docs/07-implementacion/inicio-rapido.md).
+
+Fuentes/configuraciones en Git; resultados grandes regenerables en simulation/results, ignorado. Cada informe identifica herramientas, parámetros y tipo de evidencia. Los enlaces se resuelven respecto al archivo que los contiene.

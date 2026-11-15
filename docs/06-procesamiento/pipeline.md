@@ -35,3 +35,7 @@ La FFT Doppler integra coherentemente muestras de cada bin de rango entre chirps
 [Contrato de interfaces](interfaces.md) · [Plan de simulación](../../simulation/PLAN.md)
 
 [Volver al índice técnico](../README.md)
+
+## Estudio de formatos numéricos
+
+[FFT en punto fijo, con esquemas](fft-punto-fijo.md). Hay un contrato inicial propuesto de formatos y escalado; la frase anterior sobre formatos no escogidos describe la situación previa y la selección definitiva sigue pendiente. La FFT flotante de S1 no se convierte en fija por cuantizar solo la entrada.

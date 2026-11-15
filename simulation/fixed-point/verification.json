@@ -1,0 +1,59 @@
+{
+  "evidence": "THEORETICAL documentation checks; no MATLAB execution or complete FFT validation",
+  "checks_passed": [
+    "integer butterfly versus independent rational arithmetic",
+    "positive and negative half-LSB ties",
+    "saturation versus wrap example",
+    "Q1.15 limits and representable unit twiddles",
+    "N8 bit-reversal permutation",
+    "stage counts and accumulated normalization",
+    "full-scale complex counterexample despite per-stage divide by two"
+  ],
+  "u_codes": [
+    6144,
+    0
+  ],
+  "v_codes": [
+    10240,
+    8192
+  ],
+  "trace": {
+    "product_f31": [
+      -268435456,
+      -536870912
+    ],
+    "rotation_f15": [
+      -4096,
+      -8192
+    ],
+    "u_before_saturation": [
+      6144,
+      0
+    ],
+    "v_before_saturation": [
+      10240,
+      8192
+    ],
+    "clipped_components": 0
+  },
+  "stress": {
+    "product_f31": [
+      3036911094,
+      0
+    ],
+    "rotation_f15": [
+      46340,
+      0
+    ],
+    "u_before_saturation": [
+      39554,
+      0
+    ],
+    "v_before_saturation": [
+      -6787,
+      0
+    ],
+    "clipped_components": 1
+  },
+  "matlab_example_sha256": "97df853a78e0d7a2b197cca33bc1df5d1db65ea92e401ab00dc11c7f38ddcc5e"
+}

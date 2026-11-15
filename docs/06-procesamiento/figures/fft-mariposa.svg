@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img"><title>02 / Mariposa radix-2 con aritmética fija</title><desc>T = B·W; U = (A + T)/2; V = (A − T)/2 · misma regla aplicada a real e imaginario</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52657a"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#142d4e}.mono{font-family:Consolas,monospace}.small{font-size:18px}.label{font-size:22px}</style>
+<text x="48" y="55" font-size="32" fill="#142d4e" style="fill:#142d4e" font-weight="700" text-anchor="start">02 / Mariposa radix-2 con aritmética fija</text>
+<text x="48" y="91" font-size="20" fill="#52657a" style="fill:#52657a" font-weight="400" text-anchor="start">T = B·W; U = (A + T)/2; V = (A − T)/2 · misma regla aplicada a real e imaginario</text>
+<text x="48" y="181" font-size="30" fill="#142d4e" style="fill:#142d4e" font-weight="700" text-anchor="start">A</text>
+<text x="48" y="387" font-size="30" fill="#142d4e" style="fill:#142d4e" font-weight="700" text-anchor="start">B</text>
+<path d="M85,170 L680,170" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M85,375 L240,375" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="240" y="335" width="185" height="88" rx="12" fill="#edf4fa" stroke="#c9d8e6" stroke-width="2"/><text x="332.5" y="367" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="middle">× W</text><text x="332.5" y="396" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">producto complejo</text>
+<path d="M425,375 L455,375" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="455" y="335" width="185" height="88" rx="12" fill="#edf4fa" stroke="#c9d8e6" stroke-width="2"/><text x="547.5" y="367" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="middle">Roundshift 16</text><text x="547.5" y="396" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">F31 → F15</text>
+<path d="M640,375 L690,375" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<line x1="650" y1="170" x2="690" y2="375" stroke="#176db0" stroke-width="2"/>
+<line x1="650" y1="375" x2="690" y2="170" stroke="#057d80" stroke-width="2"/>
+<circle cx="720" cy="170" r="30" fill="#edf4fa" stroke="#176db0" stroke-width="2"/>
+<text x="720" y="179" font-size="32" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">+</text>
+<path d="M750,170 L815,170" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="815" y="126" width="200" height="88" rx="12" fill="#edf4fa" stroke="#c9d8e6" stroke-width="2"/><text x="915.0" y="158" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="middle">Roundshift 1</text><text x="915.0" y="187" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">escala /2</text>
+<path d="M1015,170 L1050,170" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="1050" y="126" width="230" height="88" rx="12" fill="#edf4fa" stroke="#c9d8e6" stroke-width="2"/><text x="1165.0" y="158" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="middle">Saturar a 16 bits</text><text x="1165.0" y="187" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">registrar overflow</text>
+<path d="M1280,170 L1340,170" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<circle cx="720" cy="375" r="30" fill="#edf4fa" stroke="#176db0" stroke-width="2"/>
+<text x="720" y="384" font-size="32" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">−</text>
+<path d="M750,375 L815,375" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="815" y="331" width="200" height="88" rx="12" fill="#edf4fa" stroke="#c9d8e6" stroke-width="2"/><text x="915.0" y="363" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="middle">Roundshift 1</text><text x="915.0" y="392" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">escala /2</text>
+<path d="M1015,375 L1050,375" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="1050" y="331" width="230" height="88" rx="12" fill="#edf4fa" stroke="#c9d8e6" stroke-width="2"/><text x="1165.0" y="363" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="middle">Saturar a 16 bits</text><text x="1165.0" y="392" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">registrar overflow</text>
+<path d="M1280,375 L1340,375" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<text x="1345" y="179" font-size="25" fill="#142d4e" style="fill:#142d4e" font-weight="700" text-anchor="start">U</text>
+<text x="1345" y="384" font-size="25" fill="#142d4e" style="fill:#142d4e" font-weight="700" text-anchor="start">V</text>
+<text x="245" y="480" font-size="23" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="start" class="mono">W = cos(θ) − j·sin(θ)</text>
+<path d="M332,455 L332,425" stroke="#52657a" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<text x="50" y="540" font-size="25" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="start">A = 0,5 + j0,25; B = 0,25 − j0,125; W = −j</text>
+<text x="50" y="585" font-size="25" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="start" class="mono">T = −0,125 − j0,25     U = 0,1875     V = 0,3125 + j0,25</text>
+<text x="50" y="632" font-size="21" fill="#52657a" style="fill:#52657a" font-weight="400" text-anchor="start">Cruces sin punto no conectan señales. El esquema no especifica ciclos ni pipeline.</text>
+<line x1="48" y1="690" x2="1352" y2="690" stroke="#dce5ed" stroke-width="2"/>
+<text x="48" y="718" font-size="18" fill="#52657a" style="fill:#52657a" font-weight="400" text-anchor="start">Ejemplo teórico exacto. Redondeo propuesto: al más cercano, empates alejándose de cero.</text>
+</svg>

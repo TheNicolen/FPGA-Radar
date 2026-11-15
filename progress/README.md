@@ -19,3 +19,5 @@ Este directorio documenta **qué se hizo, cómo se verificó y qué falta**. Cad
 [Inicio](../README.md)
 
 - [2026-11-14 — Laboratorio MATLAB inicial](2026-11-14-simulacion-matlab.md)
+
+- [2026-11-14 — Navegación y documentación de FFT fija](2026-11-14-fft-fija-documentacion.md)

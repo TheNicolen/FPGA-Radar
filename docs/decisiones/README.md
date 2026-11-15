@@ -12,3 +12,5 @@ Cada decisión relevante debe quedar registrada con número, fecha, estado, cont
 [Volver al índice técnico](../README.md)
 
 - [ADR-0005: Referencia MATLAB desde IF](ADR-0005-referencia-matlab-if.md)
+
+- [ADR-0006: contrato inicial de FFT fija](ADR-0006-fft-punto-fijo.md)

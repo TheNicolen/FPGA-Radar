@@ -16,6 +16,18 @@ Proyecto de investigación y desarrollo de un radar coherente con procesamiento 
 8. [Decisiones de arquitectura (ADR)](docs/decisiones/README.md)
 9. [Hoja de ruta](ROADMAP.md)
 
+## Simulación — acceso directo
+
+| Estudio | Qué encontrarás | Estado |
+|---|---|---|
+| [Índice de simulación](simulation/README.md) | Ruta de lectura y todos los estudios | Índice |
+| [S0 · Presupuesto de enlace](simulation/reports/2026-11-14-calculo-enlace.md) | Cálculo de potencia y ruido de referencia | TEÓRICO |
+| [S1 · Antena y FMCW en MATLAB](simulation/reports/2026-11-14-matlab-estudio-inicial.md) | Resultados, figuras y datos del primer estudio | MATLAB ejecutado |
+| [S2 · FFT en punto fijo](simulation/fixed-point/README.md) | Explicación, esquemas y ejemplo de mariposa | Diseño propuesto; ejemplo analítico |
+| [Ejecutar laboratorio MATLAB](simulation/matlab/README.md) | Comandos y archivos fuente | Reproducible |
+
+Los estudios sintéticos no demuestran alcance físico ni implementación FPGA.
+
 ## Arquitectura candidata
 
 ```mermaid

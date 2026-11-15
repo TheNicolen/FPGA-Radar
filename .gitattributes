@@ -10,3 +10,5 @@
 *.m text eol=lf
 *.csv text eol=lf
 *.png binary
+
+*.svg text eol=lf

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img"><title>01 / Punto fijo: el entero y su escala</title><desc>Propuesta didáctica · cada componente I o Q usa su propia palabra signed de 16 bits</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52657a"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#142d4e}.mono{font-family:Consolas,monospace}.small{font-size:18px}.label{font-size:22px}</style>
+<text x="48" y="55" font-size="32" fill="#142d4e" style="fill:#142d4e" font-weight="700" text-anchor="start">01 / Punto fijo: el entero y su escala</text>
+<text x="48" y="91" font-size="20" fill="#52657a" style="fill:#52657a" font-weight="400" text-anchor="start">Propuesta didáctica · cada componente I o Q usa su propia palabra signed de 16 bits</text>
+<text x="50" y="148" font-size="26" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="start">Q1.15   |   W = 16, F = 15   |   valor = código / 32768</text>
+<rect x="50" y="180" width="74" height="65" rx="12" fill="#fcebed" stroke="#c9d8e6" stroke-width="2"/>
+<text x="87" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="87" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b15</text>
+<text x="87" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">−1</text>
+<rect x="130" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="167" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">1</text>
+<text x="167" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b14</text>
+<text x="167" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−1</text>
+<rect x="210" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="247" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="247" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b13</text>
+<text x="247" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−2</text>
+<rect x="290" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="327" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="327" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b12</text>
+<text x="327" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−3</text>
+<rect x="370" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="407" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="407" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b11</text>
+<text x="407" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−4</text>
+<rect x="450" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="487" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="487" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b10</text>
+<text x="487" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−5</text>
+<rect x="530" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="567" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="567" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b9</text>
+<text x="567" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−6</text>
+<rect x="610" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="647" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="647" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b8</text>
+<text x="647" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−7</text>
+<rect x="690" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="727" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="727" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b7</text>
+<text x="727" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−8</text>
+<rect x="770" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="807" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="807" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b6</text>
+<text x="807" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−9</text>
+<rect x="850" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="887" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="887" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b5</text>
+<text x="887" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−10</text>
+<rect x="930" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="967" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="967" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b4</text>
+<text x="967" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−11</text>
+<rect x="1010" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="1047" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="1047" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b3</text>
+<text x="1047" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−12</text>
+<rect x="1090" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="1127" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="1127" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b2</text>
+<text x="1127" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−13</text>
+<rect x="1170" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="1207" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="1207" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b1</text>
+<text x="1207" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−14</text>
+<rect x="1250" y="180" width="74" height="65" rx="12" fill="#e7f2fb" stroke="#c9d8e6" stroke-width="2"/>
+<text x="1287" y="220" font-size="28" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle" class="mono">0</text>
+<text x="1287" y="273" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">b0</text>
+<text x="1287" y="305" font-size="18" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">2^−15</text>
+<line x1="127" y1="172" x2="127" y2="252" stroke="#ae3547" stroke-width="2"/>
+<text x="50" y="352" font-size="26" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="start" class="mono">Ejemplo: 0100 0000 0000 0000 → entero 16384 → 0,5</text>
+<rect x="50" y="398" width="405" height="150" rx="12" fill="#edf4fa" stroke="#c9d8e6" stroke-width="2"/><text x="252.5" y="430" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="middle">Rango de una componente</text><text x="252.5" y="459" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">−1 ≤ valor ≤ 0,9999694824</text><text x="252.5" y="488" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">Paso: 1 / 32768</text>
+<rect x="485" y="398" width="405" height="150" rx="12" fill="#edf4fa" stroke="#c9d8e6" stroke-width="2"/><text x="687.5" y="430" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="middle">El signo cuenta en Qm.n</text><text x="687.5" y="459" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">m incluye el bit de signo</text><text x="687.5" y="488" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">Q1.15 suma 16 bits</text>
+<rect x="920" y="398" width="405" height="150" rx="12" fill="#edf4fa" stroke="#c9d8e6" stroke-width="2"/><text x="1122.5" y="430" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="middle">Twiddle propuesto: Q2.16</text><text x="1122.5" y="459" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">W = 18, F = 16</text><text x="1122.5" y="488" font-size="21" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="middle">+1 y −1 sí son exactos</text>
+<text x="50" y="607" font-size="25" fill="#142d4e" style="fill:#142d4e" font-weight="600" text-anchor="start">I y Q pueden caber por separado y aun así tener |I + jQ| &gt; 1.</text>
+<text x="50" y="645" font-size="23" fill="#142d4e" style="fill:#142d4e" font-weight="400" text-anchor="start">Ejemplo: 0,9 + j0,9 tiene módulo ≈ 1,273. Hay que definir margen de entrada.</text>
+<line x1="48" y1="690" x2="1352" y2="690" stroke="#dce5ed" stroke-width="2"/>
+<text x="48" y="718" font-size="18" fill="#52657a" style="fill:#52657a" font-weight="400" text-anchor="start">Esquema explicativo. No fija todavía el formato óptimo ni demuestra ausencia de overflow.</text>
+</svg>

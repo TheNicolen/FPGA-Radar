@@ -37,3 +37,5 @@ La política de evidencia amplía las etiquetas del paquete original separando e
 - [Procedencia y preservación del paquete](00-metodologia/procedencia.md)
 
 - [Frecuencias y modelo MATLAB](06-procesamiento/frecuencias-y-modelo-matlab.md)
+
+- [FFT en punto fijo: capítulo ilustrado](06-procesamiento/fft-punto-fijo.md) · [Subíndice de simulación](../simulation/README.md).

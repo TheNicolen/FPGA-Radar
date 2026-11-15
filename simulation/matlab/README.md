@@ -45,3 +45,7 @@ El alcance por umbral es un cruce energético ideal; puede quedar fuera del alca
 ## Comprobación independiente
 
 [verify_reference.py](verify_reference.py) reproduce las ecuaciones y casos en Python. Sus resultados comprueban la referencia matemática, **no prueban que los archivos .m se ejecuten correctamente**. Usa solo la biblioteca estándar de Python; la versión efectivamente utilizada queda en su salida. El comando es `python simulation/matlab/verify_reference.py` y las salidas quedan en simulation/results/python_reference.
+
+## Próximo bloque: punto fijo interno
+
+[FFT fija: capítulo y subíndice](../fixed-point/README.md). El nuevo [microejemplo de mariposa](demo_fixed_butterfly.m) está separado del estudio S1 ya ejecutado: no se incluye en sus ocho grupos aprobados y todavía no registra ejecución MATLAB.

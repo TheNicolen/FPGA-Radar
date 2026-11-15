@@ -28,3 +28,7 @@ Acordar métricas cuantitativas; implementar modelo FMCW; elegir estrategia de F
 ## Avance MATLAB — 2026-11-14
 
 F0.1: barridos de frecuencia, eficiencia y RCS ejecutados; sensibilidad a otras pérdidas aún pendiente. F0.2/F1.0: referencia MATLAB IF, FFT 2D, cuantización de entrada y CFAR 1D aislado ejecutados. No se cierra F0.2: falta Pd/SNR, clutter y métricas acordadas. [Informe y evidencia](simulation/reports/2026-11-14-matlab-estudio-inicial.md).
+
+## Documentación FFT fija — 2026-11-14
+
+F1.0: [contrato numérico propuesto y esquemas](docs/06-procesamiento/fft-punto-fijo.md), con ejemplo de mariposa comprobado analíticamente. F1.1 sigue pendiente: aún no hay FFT fija completa ni RTL verificado.
