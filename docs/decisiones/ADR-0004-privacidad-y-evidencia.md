@@ -24,3 +24,7 @@ Las colaboraciones requieren acceso autorizado. La privacidad no reemplaza contr
 Cualquier cambio de privacidad requiere una nueva instrucción explícita del propietario. No asumir autorización a partir del material inicial.
 
 [Volver al índice técnico](../README.md)
+
+## Adenda sobre visibilidad
+
+El propietario indicó mantener el repositorio público. Esta instrucción reemplaza la decisión histórica de privacidad para GitHub. Sigue vigente la política de evidencia. La visibilidad se mantiene según la configuración actual.

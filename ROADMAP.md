@@ -1,34 +1,43 @@
 # Hoja de ruta verificable
 
-[Inicio](README.md) · [Requisitos](docs/03-requisitos/requisitos.md) · [Bitácora](progress/README.md)
+[Inicio](README.md) · [Simulación](simulation/README.md) · [Base móvil](docs/05-antenas/base-movil.md) · [Bitácora](progress/README.md)
 
-Los criterios son propuestos y deben fijarse antes de los ensayos. Ninguna carpeta creada demuestra un hito técnico.
+Los criterios de cierre son **[PROPUESTOS]**. Antes de cada ensayo se registrarán versión, configuración, condiciones, tamaño de muestra, umbrales y evidencia reproducible.
 
-| Hito | Dependencia | Entregable y criterio de cierre | Estado |
-|---|---|---|---|
-| F0.0 Organización | Paquete inicial | Capítulos navegables, ADR, bitácora, convenciones y comprobación de enlaces | Estructura local verificada; remoto privado vacío inspeccionado para carga |
-| F0.1 Enlace | SYS-003/004 | Cálculo reproducible, barridos RCS 1/10/100 m², sensibilidad a pérdidas y tabla de supuestos | Cálculo base disponible; barridos pendientes |
-| F0.2 FMCW | F0.1 | Configuración congelada; SIM-001 a SIM-005 ejecutados; Pd/Pfa, resolución y velocidad acordadas | Pendiente |
-| F1.0 Formatos e interfaces | F0.2 | Contrato I/Q, formatos Q, tolerancias, buffers y vectores con hashes | Propuesto |
-| F1.1 RTL por bloque | F1.0 | Testbench autochecking, stalls/reset/overflow, comparación numérica por bloque | Pendiente |
-| F1.2 Nexys Video | F1.1 | Pipeline sintético, timing cerrado al reloj elegido, recursos dentro del dispositivo y cero pérdida al caudal acordado | Pendiente |
-| F2 Jetson | F1.0 | Protocolo versionado, prueba de caudal/duración acordados, contadores de pérdida y detección de secuencias faltantes | Pendiente |
-| F3 Antena | Instrumentos | Geometría, S11 y patrón con incertidumbre; ganancia por método calibrado | Pendiente |
-| F4 RF coherente | ADR-0002, F1.2 | Matriz eléctrica/HDL aprobada, BOM <300.000 CLP, loopback conducido y estabilidad de fase medida | Bloqueado por selección RF |
-| F5 Campo | F2/F3/F4 | Condiciones y permisos documentados; pruebas progresivas con distancia independiente, Pd/Pfa e incertidumbre | Pendiente |
+## 0. Simulaciones existentes
 
-## Cierre del objetivo de 1 km
+Se conserva el bloque de simulaciones y sus resultados. S0 contiene el [presupuesto de enlace](simulation/reports/2026-11-14-calculo-enlace.md). S1 contiene el [estudio FMCW ejecutado en MATLAB](simulation/reports/2026-11-14-matlab-estudio-inicial.md). S2 contiene la [propuesta de FFT fija y la verificación aritmética de una mariposa](simulation/fixed-point/README.md). La FFT fija completa, el clutter y las curvas de detección bajo ruido siguen pendientes.
 
-Antes del ensayo fijar tipo/orientación del vehículo, escenarios, velocidad, número de pasadas, distancia de referencia, criterio de asociación, Pd mínimo, Pfa máximo y sus denominadores. Registrar ensayos fallidos y blancos ausentes. Solo declarar alcance demostrado bajo las condiciones efectivamente medidas y con sus intervalos de confianza. Actualmente **no demostrado**.
+## 1. Banco modular y montaje
 
-## Próximas tareas
+| Hito | Prueba y evidencia de cierre | Estado |
+|---|---|---|
+| M1 · Ethernet Nexys Video → Jetson Nano | Enviar tramas sintéticas numeradas. Medir pérdidas, duplicados, latencia y caudal durante un intervalo acordado. Registrar la recuperación tras desconexión y reinicio. | Pendiente |
+| M2 · Recepción y almacenamiento en Jetson | Reproducir un archivo conocido y verificar muestras, orden I/Q, secuencia, marca temporal y detección de tramas inválidas. Guardar captura y contadores. | Pendiente, tras M1 |
+| M3 · HMI en Jetson | Mostrar estado del enlace, ángulos y origen de datos, mapa de prueba y grabación. Demostrar una sesión reproducible con datos sintéticos y desconexión. | Pendiente, viable en paralelo con M1 |
+| M4 · Base móvil y apuntamiento manual | Levantar cotas, verificar fijación y bloqueo, medir topes y repetibilidad de ambos ejes y revisar la ruta del cable durante todo el recorrido. | Prototipo construido. Pendientes cotas y ensayos |
+| M5 · Gabinete para Nexys Video, Jetson y monitor | Evaluar una torre de PC como gabinete. Dibujar distribución, soportes, ventilación, acceso a conectores y paso de cables. Verificar montaje y temperaturas en sesión de banco. | Pendiente |
 
-Acordar métricas cuantitativas; implementar modelo FMCW; elegir estrategia de FFT y formatos; comprobar interfaces RF; cotizar BOM completa. No hay fechas de cierre comprometidas sin resolver estas dependencias.
+## 2. Desarrollo técnico por bloques
 
-## Avance MATLAB — 2026-11-14
+| Hito | Trabajo | Prueba y evidencia de cierre |
+|---|---|---|
+| T1 · Justificación matemática y DSP | Derivar modelo I/Q, muestreo y FFT de rango y Doppler. Definir qué ruido o interferencia se busca reducir y comparar ventana, filtrado y umbral de detección. Derivar escalas, formatos y error en punto fijo. | Referencia reproducible con entradas idénticas antes/después. Medir SNR, sesgo, resolución y falsas alarmas. Comparar modelos flotante, fijo y RTL y registrar recursos y timing en la placa objetivo. |
+| T2 · Reconocimiento de patrones | Definir clases y rasgos de la firma en rango–Doppler. Comparar una regla base y un clasificador. Ubicación inicial candidata: extraer rasgos en el sistema digital y evaluar el clasificador en Jetson antes de decidir su partición. | Separar entrenamiento y evaluación por sesión o vehículo. Reportar matriz de confusión, muestras por clase y rechazo de desconocidos. |
+| T3 · Reflector y transceptor RF propio | Levantar geometría y caracterizar alimentador, apuntamiento, aislamiento Tx/Rx y coherencia. Definir la interfaz con la Nexys Video según tasas, relojes, niveles y conectores. | Ensayo conducido con cargas y atenuación, captura I/Q y verificación de coherencia, sensibilidad y espurias. Caracterizar el reflector por separado. |
+| T4 · Azimut y elevación digitales | Medir cargas y recorridos. Diseñar transmisión, lectura de ángulos, referencia inicial, topes y ruta de cable. | Medir error angular, juego, repetibilidad, tiempo de estabilización y comportamiento ante límite o pérdida de referencia. |
+| T5 · Alimentación del equipo | Levantar consumos de placas, monitor, RF y motores. Definir fuentes, distribución, retorno de corriente y protecciones para el gabinete. | Medir tensiones, corriente de arranque, caída al mover motores y temperaturas bajo carga. |
 
-F0.1: barridos de frecuencia, eficiencia y RCS ejecutados; sensibilidad a otras pérdidas aún pendiente. F0.2/F1.0: referencia MATLAB IF, FFT 2D, cuantización de entrada y CFAR 1D aislado ejecutados. No se cierra F0.2: falta Pd/SNR, clutter y métricas acordadas. [Informe y evidencia](simulation/reports/2026-11-14-matlab-estudio-inicial.md).
+Para una interfaz de banda base digital, el **DAC** convierte la señal digital de **transmisión** a analógica. El **ADC** digitaliza la señal analógica de **recepción**. T3 definirá si ambos convertidores son externos o están incluidos en el transceptor y en qué punto se interconectan. La placa objetivo sigue siendo **Nexys Video**. El uso de una **Basys** como plataforma adicional de laboratorio queda por confirmar.
 
-## Documentación FFT fija — 2026-11-14
+## 3. Integración y campaña de pruebas
 
-F1.0: [contrato numérico propuesto y esquemas](docs/06-procesamiento/fft-punto-fijo.md), con ejemplo de mariposa comprobado analíticamente. F1.1 sigue pendiente: aún no hay FFT fija completa ni RTL verificado.
+| Ensayo | Evidencia esperada |
+|---|---|
+| Barrido | Mapa de ángulos comandados y medidos, cobertura observada, tiempo de revisita y capturas por posición. Comparar barrido por pasos y continuo cuando el control lo permita. |
+| Ruido de motores | Con la misma configuración RF y ganancia, comparar motores apagados, energizados en reposo y en movimiento. Guardar I/Q y espectro, medir cambios en piso de ruido y espurias, y repetir con alimentación separada y con antena inmóvil para ayudar a distinguir acoplamiento eléctrico de vibración. |
+| Identificación por firma | Pasadas repetidas con clase, trayectoria y distancia de referencia. Evaluación con sesiones reservadas e inclusión de escenas vacías. |
+| Robustez | Verificar pérdida Ethernet, recuperación, deriva térmica, estabilidad del carro, flexión y torsión de los cables, y verificar lluvia/polvo solo según la protección que se construya. |
+| Alcance | Incrementar distancia en ensayos de campo aplicables. Registrar orientación, velocidad, asociación, pasadas fallidas, escenas sin blancos, Pd/Pfa y sus denominadores e incertidumbre. **1 km sigue siendo un objetivo pendiente de validación.** |
+
+El siguiente bloque de banco es **M1–M3**, con datos sintéticos. En paralelo puede completarse el levantamiento **M4**. El cierre de integración requiere revisar el gabinete, la alimentación y el RF conducido antes de la campaña de campo.

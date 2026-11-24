@@ -21,3 +21,5 @@ Este directorio documenta **qué se hizo, cómo se verificó y qué falta**. Cad
 - [2026-11-14 — Laboratorio MATLAB inicial](2026-11-14-simulacion-matlab.md)
 
 - [2026-11-14 — Navegación y documentación de FFT fija](2026-11-14-fft-fija-documentacion.md)
+
+- [2026-11-24 — Prototipo de base móvil y plan modular](2026-11-24-base-movil-y-plan-modular.md)

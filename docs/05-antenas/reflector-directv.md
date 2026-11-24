@@ -11,6 +11,8 @@
 | Ángulo offset | PENDIENTE: no derivable solo con alto y ancho |
 | Tipo | Reflector de antena de TV satelital (offset, a verificar) |
 
+[Fotos, croquis de montaje y cotas pendientes de la base móvil](base-movil.md)
+
 ## Cálculo idealizado
 
 Para un reflector circular equivalente de diámetro de apertura `D = 0,46 m`, eficiencia hipotética `η = 0,55`:

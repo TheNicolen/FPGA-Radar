@@ -1,8 +1,20 @@
 # FPGA-Radar
 
-> **Estado:** Investigación y diseño preliminar · **Versión documental:** v0.2.0 · **Última revisión:** 2026-11-14
+> **Estado:** Investigación y diseño preliminar · **Versión documental:** v0.3.0 · **Última revisión:** 2026-11-24
 
 Proyecto de investigación y desarrollo de un radar coherente con procesamiento digital en FPGA (**Digilent Nexys Video, Artix-7 XC7A200T**) y unidad de supervisión **NVIDIA Jetson Nano**. La meta es detectar vehículos a una distancia de hasta **1 km**, utilizando sensores de radiofrecuencia amplificados por antenas de topologías apropiadas, identificación de patrones en tiempo real, mitigación de ruido por fourier para identificación más precisa.
+
+## Prototipo de base móvil
+
+El reflector se monta en un carro de cuatro ruedas de **90 × 50 cm**, con **70 cm entre ejes** y ajuste manual de **azimut y elevación**. El cableado está previsto por dentro del mástil y por la pestaña central del carro.
+
+| Vista frontal | Vista lateral |
+|:---:|:---:|
+| ![Reflector y carro vistos de frente](docs/05-antenas/figuras-base/vista-frontal.jpg) | ![Perfil del reflector, brazo y mástil](docs/05-antenas/figuras-base/vista-lateral.jpg) |
+| **Ajuste de elevación** | **Unión del mástil al carro** |
+| ![Ranura curva con perno de fijación de elevación](docs/05-antenas/figuras-base/ajuste-elevacion.jpg) | ![Detalle del larguero y de la base del mástil](docs/05-antenas/figuras-base/detalle-carro.jpg) |
+
+[Ver esquema acotado y ruta de cables](docs/05-antenas/base-movil.md) · [Ver plan modular](ROADMAP.md)
 
 ## Empieza aquí
 
@@ -43,12 +55,12 @@ La RF genera/recibe la señal de microondas; la FPGA procesa las muestras digita
 
 ## Fases
 
-- **F0:** Simulación matemática del sistema y presupuesto de enlace.
-- **F1:** Pipeline de adquisición y procesamiento con datos sintéticos en FPGA.
-- **F2:** Comunicación Nexys Video ↔ Jetson Nano.
-- **F3:** Caracterización de antena y alimentador, recepción pasiva.
-- **F4:** Integración de transceptor RF coherente y ensayos conducidos.
-- **F5:** Ensayos radiados legalmente autorizados y validación experimental.
+1. **Simulaciones:** consultar los estudios existentes en el índice.
+2. **Banco modular:** verificar Ethernet, recepción en Jetson, HMI, apuntamiento manual y gabinete.
+3. **Desarrollo técnico:** justificar el procesamiento, evaluar firmas, diseñar RF, motorizar y dimensionar la alimentación.
+4. **Integración y pruebas:** medir barrido, ruido de motores, identificación y alcance.
+
+[Hoja de ruta con criterios de cierre](ROADMAP.md)
 
 ## Criterio de evidencia
 
@@ -64,7 +76,7 @@ El contenido se mantiene en Markdown versionado. Los datos de experimentos sigue
 
 ## Licencia
 
-**No se ha concedido una licencia de reutilización.** Mientras no se elija y publique una licencia, todos los derechos se encuentran reservados por sus titulares. El repositorio debe mantenerse privado; no se autoriza cambiar su visibilidad.
+**No se ha concedido una licencia de reutilización.** Mientras no se elija y publique una licencia, todos los derechos se encuentran reservados por sus titulares. El repositorio es público por decisión del propietario.
 
 ## Comenzar el desarrollo
 
@@ -80,7 +92,7 @@ El contenido se mantiene en Markdown versionado. Los datos de experimentos sigue
 | [papers](papers/README.md) | Plantilla LaTeX IEEE sin resultados experimentales |
 | [references](references/README.md) | Fuentes técnicas primarias |
 
-**Privacidad:** mantener GitHub privado. La copia local y su ZIP no constituyen confirmación de publicación ni sincronización remota.
+**GitHub:** el repositorio público reúne el código, la documentación y las fotos aprobadas del prototipo.
 
 ## Estudio MATLAB inicial
 

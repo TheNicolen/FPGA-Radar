@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="375" viewBox="0 0 920 375" role="img" aria-labelledby="title desc">
+<title id="title">Detalle de la pestaña y aletas laterales</title>
+<desc id="desc">Pestaña central de 50 por 50 milímetros y aletas de 50 milímetros cada una. Sección y abertura útil pendientes.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#416a8e"/></marker></defs>
+<rect width="920" height="375" fill="#f0f5f9"/><rect x="17" y="17" width="886" height="341" rx="12" fill="#fff" stroke="#b9cbd9"/>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#18354c">
+<text x="43" y="62" font-size="25" font-weight="700">Detalle G · Pestaña central y aletas</text>
+<text x="43" y="88" font-size="14">Vista esquemática desplegada · Sin escala · Cotas en mm</text>
+<path d="M210 157 H360 V247 H210 Z M510 157 H660 V247 H510 Z" fill="#e9f2fa" stroke="#24445f" stroke-width="2"/>
+<rect x="360" y="137" width="150" height="130" rx="3" fill="#cddfeb" stroke="#24445f" stroke-width="2"/>
+<text text-anchor="middle" x="285" y="197" font-size="16">Aleta</text><text text-anchor="middle" x="435" y="197" font-size="16" font-weight="700">Pestaña</text><text text-anchor="middle" x="585" y="197" font-size="16">Aleta</text>
+<path d="M435 208 V231 H477" fill="none" stroke="#b65315" stroke-width="3" stroke-dasharray="6 4"/>
+<g stroke="#416a8e" stroke-width="1.4" marker-start="url(#arrow)" marker-end="url(#arrow)">
+<line x1="210" y1="131" x2="360" y2="131"/><line x1="510" y1="131" x2="660" y2="131"/>
+<line x1="360" y1="290" x2="510" y2="290"/><line x1="701" y1="137" x2="701" y2="267"/>
+</g>
+<path d="M510 137 H714 M510 267 H714 M360 271 V300 M510 271 V300" stroke="#a9bdcd" fill="none" stroke-dasharray="4 4"/>
+<g font-size="15" font-weight="700"><text x="259" y="120">G1 · 50</text><text x="559" y="120">G1 · 50</text><text x="425" y="313">50</text><text x="713" y="207">50</text></g>
+<text x="43" y="339" font-size="14" fill="#944113">Pendientes: dirección de la cota G1, espesor, abertura útil y ubicación exacta en el carro.</text>
+</g></svg>

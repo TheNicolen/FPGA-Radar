@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">FPGA-Radar · Croquis de la base móvil</title><desc id="desc">Alzado lateral y planta de un carro de cuatro ruedas, mástil y reflector. Línea discontinua para la trayectoria prevista del cable. Cotas por levantar.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#416a8e"/></marker>
+<style>
+text{font:16px 'Segoe UI',Arial,sans-serif;fill:#18354c}.title{font-weight:700;font-size:31px}.head{font-weight:700;font-size:20px}.small{font-size:14px}.id{font-weight:700;fill:#315b7d}.mech{fill:#dce8f0;stroke:#24445f;stroke-width:3;stroke-linejoin:round}.line{fill:none;stroke:#24445f;stroke-width:3;stroke-linecap:round}.guide{stroke:#a9bdcd;stroke-width:1;stroke-dasharray:4 4}.dim{stroke:#416a8e;stroke-width:1.4;marker-start:url(#arrow);marker-end:url(#arrow)}.route{stroke:#b65315;stroke-width:3;fill:none;stroke-dasharray:7 5}.note{fill:#944113;font-weight:600}
+</style></defs>
+<rect width="1200" height="675" fill="#f0f5f9"/>
+<rect x="24" y="23" width="1152" height="629" rx="14" fill="#fff" stroke="#b9cbd9"/>
+<text x="51" y="70" class="title">FPGA-Radar · Base móvil con reflector offset</text>
+<text x="52" y="98" class="small">Croquis preliminar • Sin escala • Cotas informadas en milímetros. Letras sin valor: pendientes.</text>
+<path d="M50 123 H1150 M602 142 V565 M50 582 H1150" stroke="#c5d5e2"/>
+<text x="60" y="161" class="head">Alzado lateral</text><text x="627" y="161" class="head">Planta del carro</text>
+
+<!-- Alzado lateral -->
+<path d="M105 498 H542" class="guide"/>
+<circle cx="164" cy="465" r="32" class="mech"/><circle cx="461" cy="465" r="32" class="mech"/>
+<circle cx="164" cy="465" r="10" class="mech"/><circle cx="461" cy="465" r="10" class="mech"/>
+<rect x="140" y="426" width="345" height="19" rx="3" class="mech"/>
+<path d="M293 426 V305 H312 V426 Z" class="mech"/>
+<path d="M286 426 L290 418 H316 L324 426 Z" class="mech"/>
+<path d="M292 307 L283 279 L311 270 L332 331 Z" class="mech"/>
+<circle cx="300" cy="290" r="5" class="mech"/><path d="M295 313 Q312 314 320 303" class="line"/>
+<path d="M258 184 Q260 279 345 350 L353 345 Q285 269 268 181 Z" class="mech"/>
+<path d="M346 341 L377 340 L445 307 L493 291 L499 302 L381 355 L349 355 Z" class="mech"/>
+<path d="M489 299 L365 352 L303 322 V431 H412" class="route"/>
+<path d="M318 429 H335 V439 H318" class="line"/>
+<path d="M105 290 H288 M105 498 H138" class="guide"/><line x1="111" y1="293" x2="111" y2="495" class="dim"/><text x="84" y="398" class="id">E</text>
+<path d="M164 500 V528 M461 500 V528" class="guide"/><line x1="164" y1="521" x2="461" y2="521" class="dim"/><text x="284" y="547" class="id">C · 700</text>
+<path d="M302 290 L365 215 H472 M303 372 H385 M495 297 L518 241 H549 M328 437 L369 467 H416" class="guide"/>
+<text x="368" y="209" class="small"><tspan class="id">L</tspan> · Pivote y topes</text>
+<text x="389" y="377" class="small"><tspan class="id">F</tspan> · Tubo</text>
+<text x="430" y="231" class="small"><tspan class="id">K</tspan> · Punta del brazo</text>
+<text x="371" y="480" class="small"><tspan class="id">G</tspan> · Pestaña (ver detalle)</text>
+<text x="287" y="185" class="small"><tspan class="id">H / I / J</tspan> · Cotas del reflector</text>
+
+<!-- Planta -->
+<path d="M687 337 H1094 V362 H687 Z" class="mech"/>
+<path d="M725 259 V440 M1050 259 V440" class="line"/>
+<rect x="695" y="238" width="60" height="42" rx="12" class="mech"/><rect x="1020" y="238" width="60" height="42" rx="12" class="mech"/>
+<rect x="695" y="419" width="60" height="42" rx="12" class="mech"/><rect x="1020" y="419" width="60" height="42" rx="12" class="mech"/>
+<path d="M725 280 V301 H780 L828 337 M1050 280 V301 H995 L949 337 M725 419 V397 H780 L828 362 M1050 419 V397 H995 L949 362" class="line"/>
+<circle cx="892" cy="349" r="21" class="mech"/><circle cx="892" cy="349" r="10" class="mech"/>
+<path d="M892 349 H984" class="route"/><rect x="915" y="344" width="17" height="13" fill="none" stroke="#944113" stroke-width="2"/>
+<path d="M1094 337 V513 M687 363 V513" class="guide"/><line x1="687" y1="508" x2="1094" y2="508" class="dim"/><text x="863" y="534" class="id">A · 900</text>
+<path d="M667 238 H694 M667 461 H694" class="guide"/><line x1="674" y1="238" x2="674" y2="461" class="dim"/><text x="650" y="349" text-anchor="middle" class="id" transform="rotate(-90 650 349)">B · 500</text>
+<path d="M1080 259 H1130 M1080 440 H1130" class="guide"/><line x1="1122" y1="259" x2="1122" y2="440" class="dim"/><text x="1132" y="353" class="id">D</text>
+<text x="816" y="307" class="small">Centro del mástil</text>
+<path d="M59 612 H113" class="route"/><text x="125" y="618" class="note">Ruta prevista: brazo → interior del tubo → pestaña del carro → gabinete</text>
+<text x="952" y="618" class="small">FPGA-Radar / M4</text>
+</svg>
