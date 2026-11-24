@@ -6,4 +6,6 @@ Se prepararon la galería de portada, el croquis preliminar y la matriz de cotas
 
 El propietario aportó las primeras dimensiones del carro y autorizó mantener el repositorio público. El croquis incorpora 900 × 500 mm exteriores, 700 mm entre ejes, pestaña de 50 × 50 mm y aletas de 50 mm. Quedan pendientes las cotas del mástil, la abertura útil, el espesor de la pestaña y la geometría final del reflector.
 
+Se añadió al alzado la altura informada de 1 480 mm hasta el extremo superior del reflector en la posición medida. La cota al pivote y los diámetros del tubo siguen pendientes. Las fotos acompañan los esquemas en la ficha de la base.
+
 [Base móvil](../docs/05-antenas/base-movil.md) · [Hoja de ruta](../ROADMAP.md)

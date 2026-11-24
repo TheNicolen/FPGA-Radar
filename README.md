@@ -6,7 +6,7 @@ Proyecto de investigación y desarrollo de un radar coherente con procesamiento 
 
 ## Prototipo de base móvil
 
-El reflector se monta en un carro de cuatro ruedas de **90 × 50 cm**, con **70 cm entre ejes** y ajuste manual de **azimut y elevación**. El cableado está previsto por dentro del mástil y por la pestaña central del carro.
+El reflector se monta en un carro de cuatro ruedas de **90 × 50 cm**, con **70 cm entre ejes**, **1,48 m de altura total** en la posición medida y ajuste manual de **azimut y elevación**. El cableado está previsto por dentro del mástil y por la pestaña central del carro.
 
 | Vista frontal | Vista lateral |
 |:---:|:---:|
@@ -14,7 +14,7 @@ El reflector se monta en un carro de cuatro ruedas de **90 × 50 cm**, con **70 
 | **Ajuste de elevación** | **Unión del mástil al carro** |
 | ![Ranura curva con perno de fijación de elevación](docs/05-antenas/figuras-base/ajuste-elevacion.jpg) | ![Detalle del larguero y de la base del mástil](docs/05-antenas/figuras-base/detalle-carro.jpg) |
 
-[Ver esquema acotado y ruta de cables](docs/05-antenas/base-movil.md) · [Ver plan modular](ROADMAP.md)
+[Ver alzado, fotos de referencia y ruta de cables](docs/05-antenas/base-movil.md) · [Ver plan modular](ROADMAP.md)
 
 ## Empieza aquí
 

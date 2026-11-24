@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-<title id="title">FPGA-Radar · Croquis de la base móvil</title><desc id="desc">Alzado lateral y planta de un carro de cuatro ruedas, mástil y reflector. Línea discontinua para la trayectoria prevista del cable. Cotas por levantar.</desc>
+<title id="title">FPGA-Radar · Croquis de la base móvil</title><desc id="desc">Alzado lateral y planta de un carro de cuatro ruedas, mástil y reflector. Línea discontinua para la trayectoria prevista del cable. Altura total informada de 1480 mm desde el suelo hasta el extremo superior del reflector. Altura al pivote pendiente.</desc>
 <defs>
 <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#416a8e"/></marker>
 <style>
@@ -13,7 +13,9 @@ text{font:16px 'Segoe UI',Arial,sans-serif;fill:#18354c}.title{font-weight:700;f
 <text x="60" y="161" class="head">Alzado lateral</text><text x="627" y="161" class="head">Planta del carro</text>
 
 <!-- Alzado lateral -->
-<path d="M105 498 H542" class="guide"/>
+<path d="M61 498 H542 M61 181 H258" class="guide"/>
+<line x1="68" y1="185" x2="68" y2="494" class="dim"/>
+<text x="54" y="340" transform="rotate(-90 54 340)" text-anchor="middle" class="id">M · 1480</text>
 <circle cx="164" cy="465" r="32" class="mech"/><circle cx="461" cy="465" r="32" class="mech"/>
 <circle cx="164" cy="465" r="10" class="mech"/><circle cx="461" cy="465" r="10" class="mech"/>
 <rect x="140" y="426" width="345" height="19" rx="3" class="mech"/>
