@@ -11,10 +11,28 @@ El reflector se monta en un carro de cuatro ruedas de **90 × 50 cm**, con **70 
 | Vista frontal | Vista lateral |
 |:---:|:---:|
 | ![Reflector y carro vistos de frente](docs/05-antenas/figuras-base/vista-frontal.jpg) | ![Perfil del reflector, brazo y mástil](docs/05-antenas/figuras-base/vista-lateral.jpg) |
-| **Ajuste de elevación** | **Unión del mástil al carro** |
-| ![Ranura curva con perno de fijación de elevación](docs/05-antenas/figuras-base/ajuste-elevacion.jpg) | ![Detalle del larguero y de la base del mástil](docs/05-antenas/figuras-base/detalle-carro.jpg) |
 
-[Ver alzado, fotos de referencia y ruta de cables](docs/05-antenas/base-movil.md) · [Ver plan modular](ROADMAP.md)
+![Alzado lateral y planta acotados del prototipo con el recorrido previsto de cables](docs/05-antenas/figuras-base/croquis-base.svg)
+
+[Fotos de detalle, cotas y ruta de cables](docs/05-antenas/base-movil.md) · [Plan modular](ROADMAP.md)
+
+## Resultados del estudio MATLAB
+
+Figuras exportadas por [el estudio S1 en MATLAB R2024b](simulation/reports/2026-11-14-matlab-estudio-inicial.md). El perfil usa una frecuencia candidata de **2,45 GHz**, un chirp de **20 MHz** y **128 chirps** por trama.
+
+### SNR frente a distancia · cálculo teórico
+
+![Curvas teóricas de SNR frente a distancia para RCS hipotéticas de 1, 10 y 100 metros cuadrados](simulation/reports/matlab-inicial/theoretical_range.png)
+
+La caída de las curvas sigue la dependencia **1/R⁴** del modelo. A 1 km, con una sección radar (RCS) hipotética de **10 m²**, el cálculo estima **15,95 dB** en el bin con integración coherente ideal. El umbral de **10 dB** es ilustrativo. El alcance de 1 km sigue pendiente de validación en campo.
+
+### Rango y velocidad · simulación sintética
+
+![Mapa rango–Doppler de un blanco sintético a 600 metros y más 20 metros por segundo](simulation/reports/matlab-inicial/synthetic_range_doppler.png)
+
+Con un blanco sintético de **600 m y +20 m/s**, el pico de la FFT 2D dio **598,94 m** tras corregir el acoplamiento rango–Doppler y **+20,71 m/s**. El eje vertical de la figura muestra el rango aparente. El ensayo usa amplitud normalizada para comprobar la estimación del algoritmo.
+
+[Informe, supuestos y datos de salida](simulation/reports/2026-11-14-matlab-estudio-inicial.md) · [Código MATLAB del estudio](simulation/matlab/run_study.m) · [RF, muestreo y reloj FPGA](docs/06-procesamiento/frecuencias-y-modelo-matlab.md)
 
 ## Empieza aquí
 
@@ -93,7 +111,3 @@ El contenido se mantiene en Markdown versionado. Los datos de experimentos sigue
 | [references](references/README.md) | Fuentes técnicas primarias |
 
 **GitHub:** el repositorio público reúne el código, la documentación y las fotos aprobadas del prototipo.
-
-## Estudio MATLAB inicial
-
-[Ejecutar el laboratorio](simulation/matlab/README.md) · [RF, muestreo y reloj FPGA](docs/06-procesamiento/frecuencias-y-modelo-matlab.md). La ganancia y el alcance siguen siendo teóricos; los blancos del modelo DSP son sintéticos.

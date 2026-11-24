@@ -3,7 +3,7 @@
 <defs>
 <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#416a8e"/></marker>
 <style>
-text{font:16px 'Segoe UI',Arial,sans-serif;fill:#18354c}.title{font-weight:700;font-size:31px}.head{font-weight:700;font-size:20px}.small{font-size:14px}.id{font-weight:700;fill:#315b7d}.mech{fill:#dce8f0;stroke:#24445f;stroke-width:3;stroke-linejoin:round}.line{fill:none;stroke:#24445f;stroke-width:3;stroke-linecap:round}.guide{stroke:#a9bdcd;stroke-width:1;stroke-dasharray:4 4}.dim{stroke:#416a8e;stroke-width:1.4;marker-start:url(#arrow);marker-end:url(#arrow)}.route{stroke:#b65315;stroke-width:3;fill:none;stroke-dasharray:7 5}.note{fill:#944113;font-weight:600}
+text{font:16px 'Segoe UI',Arial,sans-serif;fill:#18354c}.title{font-weight:700;font-size:31px}.head{font-weight:700;font-size:20px}.small{font-size:14px}.id{font-weight:700;fill:#315b7d}.mech{fill:#dce8f0;stroke:#24445f;stroke-width:3;stroke-linejoin:round}.line{fill:none;stroke:#24445f;stroke-width:3;stroke-linecap:round}.guide{fill:none;stroke:#a9bdcd;stroke-width:1;stroke-dasharray:4 4}.dim{stroke:#416a8e;stroke-width:1.4;marker-start:url(#arrow);marker-end:url(#arrow)}.route{stroke:#b65315;stroke-width:3;fill:none;stroke-dasharray:7 5}.note{fill:#944113;font-weight:600}
 </style></defs>
 <rect width="1200" height="675" fill="#f0f5f9"/>
 <rect x="24" y="23" width="1152" height="629" rx="14" fill="#fff" stroke="#b9cbd9"/>
