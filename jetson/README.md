@@ -1,7 +1,5 @@
 # Software Jetson Nano
 
-Cliente Ethernet del procesador FPGA, visualización, seguimiento y registro de objetivos. La definición de los mensajes y marcas de tiempo es un pendiente de arquitectura.
+RadarLink recibe detecciones y bloques I/Q por UDP, calcula el espectro y muestra la posición y los cambios de estado de los objetos. El cliente Python también se puede ejecutar en Windows con PyQt5.
 
-No existe aún código ejecutable.
-
-[Fuentes](src/README.md) · [Pruebas](tests/README.md) · [Contrato digital](../docs/06-procesamiento/interfaces.md) · [Inicio](../README.md)
+[Fuentes y ejecución](src/README.md) · [Pruebas](tests/README.md) · [Contrato digital](../docs/06-procesamiento/interfaces.md) · [Inicio](../README.md)

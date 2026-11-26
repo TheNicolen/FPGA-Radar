@@ -34,6 +34,16 @@ Con un blanco sintético de **600 m y +20 m/s**, el pico de la FFT 2D dio **598,
 
 [Informe, supuestos y datos de salida](simulation/reports/2026-11-14-matlab-estudio-inicial.md) · [Código MATLAB del estudio](simulation/matlab/run_study.m) · [RF, muestreo y reloj FPGA](docs/06-procesamiento/frecuencias-y-modelo-matlab.md)
 
+## RadarLink · interfaz de operación
+
+Capturas del HMI ejecutado con una **reproducción local de escenas FMCW sintéticas**. La pestaña Principal reúne posición, onda I/Q, espectro y bitácora. La pestaña Espectro muestra en detalle la transformada del bloque I/Q.
+
+![Pestaña Principal con posición, I/Q, espectro y registro de detecciones y salidas](jetson/figures/hmi-principal.png)
+
+![Pestaña Espectro con magnitud en dBFS frente a frecuencia de banda base](jetson/figures/hmi-espectro.png)
+
+[Código Python e instrucciones de ejecución](jetson/src/README.md)
+
 ## Empieza aquí
 
 1. [Guía de lectura](docs/README.md)
