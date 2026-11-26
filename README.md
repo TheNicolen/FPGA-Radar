@@ -4,6 +4,16 @@
 
 Proyecto de investigación y desarrollo de un radar coherente con procesamiento digital en FPGA (**Digilent Nexys Video, Artix-7 XC7A200T**) y unidad de supervisión **NVIDIA Jetson Nano**. La meta es detectar vehículos a una distancia de hasta **1 km**, utilizando sensores de radiofrecuencia amplificados por antenas de topologías apropiadas, identificación de patrones en tiempo real, mitigación de ruido por fourier para identificación más precisa.
 
+## RadarLink · interfaz de operación
+
+Capturas del HMI ejecutado con una **reproducción local de escenas FMCW sintéticas**. La pestaña Principal reúne posición, onda I/Q, espectro y bitácora. La pestaña Espectro muestra en detalle la transformada del bloque I/Q.
+
+![Pestaña Principal con posición, I/Q, espectro y registro de detecciones y salidas](jetson/figures/hmi-principal.png)
+
+![Pestaña Espectro con magnitud en dBFS frente a frecuencia de banda base](jetson/figures/hmi-espectro.png)
+
+[Código Python e instrucciones de ejecución](jetson/src/README.md)
+
 ## Prototipo de base móvil
 
 El reflector se monta en un carro de cuatro ruedas de **90 × 50 cm**, con **70 cm entre ejes**, **1,48 m de altura total** en la posición medida y ajuste manual de **azimut y elevación**. El cableado está previsto por dentro del mástil y por la pestaña central del carro.
@@ -33,16 +43,6 @@ La caída de las curvas sigue la dependencia **1/R⁴** del modelo. A 1 km, con 
 Con un blanco sintético de **600 m y +20 m/s**, el pico de la FFT 2D dio **598,94 m** tras corregir el acoplamiento rango–Doppler y **+20,71 m/s**. El eje vertical de la figura muestra el rango aparente. El ensayo usa amplitud normalizada para comprobar la estimación del algoritmo.
 
 [Informe, supuestos y datos de salida](simulation/reports/2026-11-14-matlab-estudio-inicial.md) · [Código MATLAB del estudio](simulation/matlab/run_study.m) · [RF, muestreo y reloj FPGA](docs/06-procesamiento/frecuencias-y-modelo-matlab.md)
-
-## RadarLink · interfaz de operación
-
-Capturas del HMI ejecutado con una **reproducción local de escenas FMCW sintéticas**. La pestaña Principal reúne posición, onda I/Q, espectro y bitácora. La pestaña Espectro muestra en detalle la transformada del bloque I/Q.
-
-![Pestaña Principal con posición, I/Q, espectro y registro de detecciones y salidas](jetson/figures/hmi-principal.png)
-
-![Pestaña Espectro con magnitud en dBFS frente a frecuencia de banda base](jetson/figures/hmi-espectro.png)
-
-[Código Python e instrucciones de ejecución](jetson/src/README.md)
 
 ## Empieza aquí
 
